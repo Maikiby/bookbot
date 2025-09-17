@@ -5,6 +5,7 @@ def count_words(book_text):
         num_words += 1
     return num_words
 
+
 def count_chars(book_text):
     char_dict = {}
     for char in book_text:
@@ -16,16 +17,18 @@ def count_chars(book_text):
 
     return char_dict
 
+
 def sort_dict(char_dict):
     # convert dict to lis:w
     # t of dicts
     dict_list = []
     for key in char_dict:
-        char = {"char": key, "num": char_dict[key]} 
+        char = {"char": key, "num": char_dict[key]}
         dict_list.append(char)
     # sort the dictionary
     dict_list.sort(reverse=True, key=sort_on)
     return dict_list
+
 
 def sort_on(items):
     return items["num"]
