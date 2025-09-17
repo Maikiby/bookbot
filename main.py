@@ -17,7 +17,7 @@ def main():
     char_counts = count_chars(frankenstein_book)
     sorted_char_counts = sort_dict(char_counts)
     print("============ BOOKBOT ============")
-    print(f"Analazing book found at {book_filepath}...")
+    print(f"Analyzing book found at {book_filepath}...")
     print("----------- Word Count ----------")
     print(message)
     print("--------- Character Count -------")
